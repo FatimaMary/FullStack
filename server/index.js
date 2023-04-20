@@ -22,7 +22,9 @@ import {
     dataProductStat, 
     dataTransaction,
     dataOverallStat,
+    dataAffiliateStat,
  } from "./data/index.js";
+import AffiliateStat from './models/AffiliateStat.js';
 
 /* CONFIGURATION */
 dotenv.config();
@@ -50,6 +52,7 @@ mongoose.connect(process.env.MONGO_URL, {
 .then(() => {
     app.listen(PORT, ()=> console.log(`Server Port is ${PORT}`));
     /* ONLY ADD DATA ONE TIME */
+    // AffiliateStat.insertMany(dataAffiliateStat);
     // OverallStat.insertMany(dataOverallStat);
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
