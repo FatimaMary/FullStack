@@ -36,20 +36,20 @@ export const api = createApi({
         }),
         getGeography: build.query({
             query: () => "client/geography",
-            providesTags: ["Geography"]
+            providesTags: ["Geography"],
         }),
         getSales: build.query({
             query: () => "sales/sales",
-            providesTags: ["Sales"]
+            providesTags: ["Sales"],
         }),
         getAdmins: build.query({
             query: () => "management/admins",
-            providesTags: ["Admins"]
+            providesTags: ["Admins"],
         }),
         getUserPerformance: build.query ({
             query: (id) => `management/performance/${id}`,
             providesTags: ["Performance"]
-        })
+        }),
     }),
 });
 
