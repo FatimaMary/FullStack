@@ -101,7 +101,7 @@ const Dashboard = () => {
             />
           }
         />
-        {/* <StatBox
+        <StatBox
           title="Sales Today"
           value={data && data.todayStats.totalSales}
           increase="+21%"
@@ -111,7 +111,7 @@ const Dashboard = () => {
               sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
             />
           }
-        /> */}
+        />
         <Box
           gridColumn="span 8"
           gridRow="span 2"
